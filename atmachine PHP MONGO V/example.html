@@ -1,0 +1,19 @@
+def StringChallenge(s):
+    char_positions = {}
+    max_unique = 0
+   
+    for index, char in enumerate(s):
+        if char in char_positions:
+            char_positions[char].append(index)
+        else:
+            char_positions[char] = [index]
+    
+    for positions in char_positions.values():
+        if len(positions) > 1: 
+            start = positions[0]
+            end = positions[-1]
+            unique_chars = set(s[start + 1:end])  
+            max_unique = max(max_unique, len(unique_chars))  
+    
+    return max_unique
+
