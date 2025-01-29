@@ -1,7 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
-$mongoUri = "mongodb+srv://pavankumarsidagam:PavanKumar%402001@cluster0.38qfz.mongodb.net/";
+$mongoUri = "mongodb+srv://pavankumarsidagam:Xp2evrcxVoOtlNRq@cluster0.38qfz.mongodb.net/";
 $databaseName = "atmachine";
 
 try {
